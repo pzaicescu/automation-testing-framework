@@ -1,0 +1,22 @@
+{
+  "name": "automation-testing-framework",
+  "version": "1.0.0",
+  "description": "Cypress Automation Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pzaicescu/automation-testing-framework.git"
+  },
+  "author": "Paul Z",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pzaicescu/automation-testing-framework/issues"
+  },
+  "homepage": "https://github.com/pzaicescu/automation-testing-framework#readme",
+  "devDependencies": {
+    "cypress": "^12.4.1"
+  }
+}
