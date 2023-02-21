@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/pzaicescu/automation-testing-framework#readme",
   "devDependencies": {
-    "cypress": "^12.4.1"
+    "cypress": "^12.4.1",
+    "cypress-xpath": "^2.0.1"
   }
 }
