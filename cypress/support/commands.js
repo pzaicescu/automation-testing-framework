@@ -23,3 +23,12 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('navigateToPage', (pageName) => {
+  try {
+    cy.visit(`${pageName.domain}${pageName.route}`)
+  } catch (err) {
+    console.log(`Can't navigate to ${pageName} ${err.stack}`)
+  }
+})
+
