@@ -3,11 +3,14 @@ name: Cypress Tests
 on: [push]
 
 jobs:
-  cypress-run:
+  Cypress-Test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout GitCode
         uses: actions/checkout@v2
-      - name: Cypress run
-        uses: cypress-io/github-action@v2
-        with: npm run cypress:automation-test
+
+      - name: Run Cypress Test
+        uses: cypress-io/github-action@v4
+        with:
+          command: npx cypress run
+          browser: chrome
