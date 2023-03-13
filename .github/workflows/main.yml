@@ -12,4 +12,4 @@ jobs:
       - name: Run Cypress Test
         uses: cypress-io/github-action@v4
         with:
-          command: cypress:automation-test
+          command: npm run cypress:automation-test
