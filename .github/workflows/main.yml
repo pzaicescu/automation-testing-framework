@@ -13,3 +13,11 @@ jobs:
         uses: cypress-io/github-action@v4
         with:
           command: npm run cypress:automation-test
+
+      - name: Uploading artifact
+        uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: cypress-execution-report
+          path: cypress/reports/html
+          retention-days: 30

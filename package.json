@@ -4,7 +4,7 @@
   "description": "Cypress Automation Framework",
   "main": "index.js",
   "scripts": {
-    "cypress:automation-test": "cypress run --spec 'cypress/e2e/automation-test-store/*.js'"
+    "cypress:automation-test": "cypress run --spec cypress/e2e/automation-test-store/**.js"
   },
   "repository": {
     "type": "git",
